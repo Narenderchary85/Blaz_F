@@ -118,7 +118,7 @@ const Latest = () => {
     setIsError(false);
 
     try {
-      const response = await axios.post(`https://blaz-b.onrender.com/latest/latestemail`, { email });
+      const response = await axios.post(`http://localhost:1000/latest/latestemail`, { email });
       
       if (response.data.status) {
         setMessage(response.data.message);
