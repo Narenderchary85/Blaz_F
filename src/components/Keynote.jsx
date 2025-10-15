@@ -83,17 +83,17 @@ const Keynote = () => {
       <div className="w-[85rem] h-[450px]">
         <div className="relative p-8 md:p-12 flex flex-col md:flex-row items-center justify-center"> 
         <motion.div 
-        className="relative flex-shrink-0 mb-8 md:mb-0 md:mr-12 flex justify-center items-center rounded-3xl overflow-hidden" // Added relative and overflow-hidden
+        className="relative flex-shrink-0 mb-8 md:mb-0 md:mr-12 flex justify-center items-center rounded-3xl overflow-hidden" 
         variants={imageVariants}
-        initial="initial" // Add initial and animate if you want these variants to apply
+        initial="initial" 
         animate="animate"
         whileHover="hover"
     >
-        <div className="w-64 h-64 md:w-85 md:h-85 flex items-center justify-center"> {/* Increased size for better visual */}
+        <div className="w-64 h-64 md:w-85 md:h-85 flex items-center justify-center">
             <motion.img 
-                src="/men.jpg" // Make sure this path is correct for your project
+                src="/men.jpg" 
                 alt="Founder Example Name" 
-                className="w-full h-full object-cover rounded-3xl" // Changed to w-full h-full object-cover
+                className="w-full h-full object-cover rounded-3xl" 
                 whileHover={{
                     scale: 1.1,
                     transition: { duration: 0.5 }
@@ -101,7 +101,6 @@ const Keynote = () => {
             />
         </div>
         
-        {/* Gradient Overlay and Text */}
         <div className="absolute inset-0 bg-gradient-to-t from-blue-700/80 via-transparent to-transparent rounded-3xl flex items-end p-6">
             <div>
                 <p className="text-white text-sm font-semibold mb-1 opacity-80">FOUNDER</p>

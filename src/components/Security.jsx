@@ -165,7 +165,7 @@ const Security = () => {
           variants={containerVariants}
         >
           <div className="relative p-8 md:p-12 flex flex-col md:flex-row items-center justify-center">
-            {/* Animated Security Card */}
+
             <motion.div
               className={`relative text-4xl font-bold text-white rounded-3xl flex flex-col items-center justify-center 
               w-[500px] h-[350px] overflow-hidden bg-[#06152a] shadow-[0_0_25px_rgba(0,0,0,0.8)]`}

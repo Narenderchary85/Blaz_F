@@ -123,7 +123,7 @@ const Latest = () => {
       if (response.data.status) {
         setMessage(response.data.message);
         setIsError(false);
-        setEmail(''); // Clear input on success
+        setEmail('');
       } else {
         setMessage(response.data.message || 'Something went wrong');
         setIsError(true);
@@ -217,7 +217,6 @@ const Latest = () => {
           </motion.div>
         </form>
 
-        {/* Message Display */}
         <AnimatePresence>
           {message && (
             <motion.div
