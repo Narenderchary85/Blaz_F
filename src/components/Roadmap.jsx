@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const Roadmap = () => {
+  const [isNum,setNum]=useState(10);
+
+  useEffect(()=>{
+    const inter=setInterval(()=>{
+      setNum((pre)=>{
+        if(pre<=0){
+          return 10
+        }
+          return pre-1 
+      })
+    },1000)
+    return ()=>clearInterval(inter)
+  },[]);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -217,7 +231,7 @@ const Roadmap = () => {
                 ease: "easeInOut"
               }}
             >
-              08
+              {isNum}
             </motion.span>
             
             <motion.span 
